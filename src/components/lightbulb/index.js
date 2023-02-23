@@ -1,11 +1,9 @@
 import "./index.css"
-function LightBulb(props) {
+function LightBulb1(props) {
   function buttonClick(){
-    function buttonToggle() {
-    props.setIsLightOn(false)
-    }
+    props.isLightOn(!props.setIsLightOn) 
   }
-    const file = props.isLightOn ? 'light_off.jpg' : 'light_on.png'
+    const file = props.isLightOn ? 'light_on.png' : 'light_off.jpg'
     
     return (
         <>
@@ -13,4 +11,4 @@ function LightBulb(props) {
         </>
     )
 }    
-export default LightBulb
+export default LightBulb1
